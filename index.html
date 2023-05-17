@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle</title>
+    <style>
+        main{
+            text-align: center;
+            margin: 0 auto;
+        }
+    
+        .grid-container{
+            width: 200px;
+            
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap:10px
+        }
+        .row{
+            display: grid;
+            grid-template-rows: repeat(5, 1fr);
+            gap:10px
+        }
+        .row div{
+            
+            width: 25px;
+            height: 25px;
+        }
+        input{
+            width: 25px;
+            height: 25px;
+
+        }
+        /* main{
+            display: flex;
+            flex-direction: column;
+        } */
+        #btn{
+            
+            margin: 20px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Wordle</h1>
+        <hr>
+
+        <div class="grid-container">
+            <div class="row row-1">
+                <div class="col-1">
+                    <input type="text" maxlength="1">
+                </div>
+                <div class="col-2"><input type="text" maxlength="1"></div>
+                <div class="col-3"><input type="text" maxlength="1"></div>
+                <div class="col-4"><input type="text" maxlength="1"></div>
+                <div class="col-5"><input type="text" maxlength="1"></div>
+                <div class="col-6"><input type="text" maxlength="1"></div>
+            </div>
+            <div class="row row-2">
+                <div class="col-1"><input type="text" maxlength="1"></div>
+                <div class="col-2"><input type="text" maxlength="1"></div>
+                <div class="col-3"><input type="text" maxlength="1"></div>
+                <div class="col-4"><input type="text" maxlength="1"></div>
+                <div class="col-5"><input type="text" maxlength="1"></div>
+                <div class="col-6"><input type="text" maxlength="1"></div>
+            </div>
+            <div class="row row-3">
+                <div class="col-1"><input type="text" maxlength="1"></div>
+                <div class="col-2"><input type="text" maxlength="1"></div>
+                <div class="col-3"><input type="text" maxlength="1"></div>
+                <div class="col-4"><input type="text" maxlength="1"></div>
+                <div class="col-5"><input type="text" maxlength="1"></div>
+                <div class="col-6"><input type="text" maxlength="1"></div>
+            </div>
+            <div class="row row-4">
+                <div class="col-1"><input type="text" maxlength="1"></div>
+                <div class="col-2"><input type="text" maxlength="1"></div>
+                <div class="col-3"><input type="text" maxlength="1"></div>
+                <div class="col-4"><input type="text" maxlength="1"></div>
+                <div class="col-5"><input type="text" maxlength="1"></div>
+                <div class="col-6"><input type="text" maxlength="1"></div>
+            </div>
+            <div class="row row-5">
+                <div class="col-1"><input type="text" maxlength="1"></div>
+                <div class="col-2"><input type="text" maxlength="1"></div>
+                <div class="col-3"><input type="text" maxlength="1"></div>
+                <div class="col-4"><input type="text" maxlength="1"></div>
+                <div class="col-5"><input type="text" maxlength="1"></div>
+                <div class="col-6"><input type="text" maxlength="1"></div>
+            </div>
+            
+        </div>
+        <div class="btn">
+            <button id="btn">SUBMIT</button>
+        </div>
+        
+        <h3 class="Winner-or-loser"></h3>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
